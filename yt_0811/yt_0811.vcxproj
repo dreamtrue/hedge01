@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\client2.ico" />
+    <None Include="res\client2.rc2" />
+    <None Include="res\thostmduserapi.dll" />
+    <None Include="res\thosttraderapi.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="res\thostmduserapi.lib" />
+    <Library Include="res\thosttraderapi.lib" />
+    <Library Include="SocketClient\lib\TwsSocketClient.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="calendar\calendar.cpp" />
+    <ClCompile Include="client2dlg.cpp" />
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="CtpTrader.cpp" />
+    <ClCompile Include="HedgeSys.cpp" />
+    <ClCompile Include="IBTRADE\AcctUpdatesDlg.cpp" />
+    <ClCompile Include="IBTRADE\client2.cpp" />
+    <ClCompile Include="IBTRADE\client2Dlg.cpp" />
+    <ClCompile Include="IBTRADE\DlgAccount.cpp" />
+    <ClCompile Include="IBTRADE\DlgAlgoParams.cpp" />
+    <ClCompile Include="IBTRADE\DlgComboLegs.cpp" />
+    <ClCompile Include="IBTRADE\DlgConnect.cpp" />
+    <ClCompile Include="IBTRADE\DlgExtOrd.cpp" />
+    <ClCompile Include="IBTRADE\DlgFAAllocationInfo.cpp" />
+    <ClCompile Include="IBTRADE\DlgFinancialAdvisor.cpp" />
+    <ClCompile Include="IBTRADE\DlgLogConfig.cpp" />
+    <ClCompile Include="IBTRADE\DlgMktDepth.cpp" />
+    <ClCompile Include="IBTRADE\DlgNewsBulletins.cpp" />
+    <ClCompile Include="IBTRADE\DlgOrder.cpp" />
+    <ClCompile Include="IBTRADE\DlgScanner.cpp" />
+    <ClCompile Include="IBTRADE\DlgSmartComboRoutingParams.cpp" />
+    <ClCompile Include="IBTRADE\DlgUnderComp.cpp" />
+    <ClCompile Include="IBTRADE\RptFilterDlg.cpp" />
+    <ClCompile Include="IBTRADE\StdAfx.cpp" />
+    <ClCompile Include="CtpMarketData.cpp" />
+    <ClCompile Include="Index.cpp" />
+    <ClCompile Include="Shared\HScrollListBox.cpp" />
+    <ClCompile Include="sinaHttp\DealIndex.cpp" />
+    <ClCompile Include="SocketClient\src\EClientSocket.cpp" />
+    <ClCompile Include="SocketClient\src\EClientSocketBase.cpp" />
+    <ClCompile Include="weixin\PicDlg.cpp" />
+    <ClCompile Include="weixin\Weixin.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="calendar\calendar.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="CtpTrader.h" />
+    <ClInclude Include="IBTRADE\AcctUpdatesDlg.h" />
+    <ClInclude Include="IBTRADE\client2.h" />
+    <ClInclude Include="IBTRADE\client2Dlg.h" />
+    <ClInclude Include="IBTRADE\DlgAccount.h" />
+    <ClInclude Include="IBTRADE\DlgAlgoParams.h" />
+    <ClInclude Include="IBTRADE\DlgComboLegs.h" />
+    <ClInclude Include="IBTRADE\DlgConnect.h" />
+    <ClInclude Include="IBTRADE\DlgExtOrd.h" />
+    <ClInclude Include="IBTRADE\DlgFAAllocationInfo.h" />
+    <ClInclude Include="IBTRADE\DlgFinancialAdvisor.h" />
+    <ClInclude Include="IBTRADE\DlgLogConfig.h" />
+    <ClInclude Include="IBTRADE\DlgMktDepth.h" />
+    <ClInclude Include="IBTRADE\DlgNewsBulletins.h" />
+    <ClInclude Include="IBTRADE\DlgOrder.h" />
+    <ClInclude Include="IBTRADE\DlgScanner.h" />
+    <ClInclude Include="IBTRADE\DlgSmartComboRoutingParams.h" />
+    <ClInclude Include="IBTRADE\DlgUnderComp.h" />
+    <ClInclude Include="IBTRADE\resource.h" />
+    <ClInclude Include="IBTRADE\RptFilterDlg.h" />
+    <ClInclude Include="IBTRADE\StdAfx.h" />
+    <ClInclude Include="CtpMarketData.h" />
+    <ClInclude Include="Index.h" />
+    <ClInclude Include="sinaHttp\DealIndex.h" />
+    <ClInclude Include="THostFtdc\ThostFtdcMdApi.h" />
+    <ClInclude Include="THostFtdc\ThostFtdcTraderApi.h" />
+    <ClInclude Include="THostFtdc\ThostFtdcUserApiDataType.h" />
+    <ClInclude Include="THostFtdc\ThostFtdcUserApiStruct.h" />
+    <ClInclude Include="UserMsg.h" />
+    <ClInclude Include="weixin\PicDlg.h" />
+    <ClInclude Include="weixin\Weixin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IBTRADE\client2.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4A81A243-1F16-4661-B767-653B6ABAA8E8}</ProjectGuid>
+    <RootNamespace>yt_0811</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>HedgeSys</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\yt_0811\yt_0811\weixin;D:\yt_0811\yt_0811\SocketClient;D:\yt_0811\yt_0811\IBTRADE;D:\yt_0811\yt_0811\calendar;D:\yt_0811\yt_0811\sinaHttp;D:\yt_0811\yt_0811\SocketClient\src;D:\yt_0811\yt_0811\TradeSpi;D:\yt_0811\yt_0811\THostFtdc;D:\yt_0811\yt_0811\MdSpi;D:\yt_0811\yt_0811\Shared;D:\yt_0811\yt_0811\yt_0811\IBTRADE;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\yt_0811\yt_0811\res;$(LibraryPath)</LibraryPath>
+    <ReferencePath>D:\yt_0811\yt_0811\res;$(ReferencePath)</ReferencePath>
+    <SourcePath>$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\yt_0811\yt_0811\SocketClient\src;D:\yt_0811\yt_0811\weixin;D:\yt_0811\yt_0811\THostFtdc;D:\yt_0811\yt_0811\SocketClient;D:\yt_0811\yt_0811\sinaHttp;D:\yt_0811\yt_0811\Shared;D:\yt_0811\yt_0811\calendar;D:\yt_0811\yt_0811\IBTRADE;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\yt_0811\yt_0811\SocketClient\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\trade\yt_0811\SocketClient\src;E:\trade\yt_0811;E:\trade\yt_0811\Shared;E:\trade\yt_0811\res;E:\trade\yt_0811\sinaHttp;E:\trade\yt_0811\weixin;E:\trade\yt_0811\THostFtdc;E:\trade\yt_0811\SocketClient;E:\trade\yt_0811\IBTRADE;E:\trade\yt_0811\calendar;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

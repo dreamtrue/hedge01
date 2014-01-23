@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="trade">
+      <UniqueIdentifier>{f208c767-89b3-4fdf-9581-84dd844457d2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\client2.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\client2.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\thostmduserapi.dll">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\thosttraderapi.dll">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="SocketClient\lib\TwsSocketClient.lib">
+      <Filter>资源文件</Filter>
+    </Library>
+    <Library Include="res\thostmduserapi.lib">
+      <Filter>资源文件</Filter>
+    </Library>
+    <Library Include="res\thosttraderapi.lib">
+      <Filter>资源文件</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IBTRADE\AcctUpdatesDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IBTRADE\client2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IBTRADE\DlgAccount.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IBTRADE\DlgAlgoParams.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IBTRADE\DlgComboLegs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IBTRADE\DlgConnect.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IBTRADE\DlgExtOrd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IBTRADE\DlgFAAllocationInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IBTRADE\DlgFinancialAdvisor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IBTRADE\DlgLogConfig.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IBTRADE\DlgMktDepth.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IBTRADE\DlgNewsBulletins.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IBTRADE\DlgOrder.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IBTRADE\DlgScanner.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IBTRADE\DlgSmartComboRoutingParams.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IBTRADE\DlgUnderComp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IBTRADE\RptFilterDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IBTRADE\StdAfx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Shared\HScrollListBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketClient\src\EClientSocket.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketClient\src\EClientSocketBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="calendar\calendar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="weixin\Weixin.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="weixin\PicDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Common.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sinaHttp\DealIndex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CtpMarketData.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Index.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CtpTrader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="HedgeSys.cpp">
+      <Filter>trade</Filter>
+    </ClCompile>
+    <ClCompile Include="IBTRADE\client2Dlg.cpp">
+      <Filter>trade</Filter>
+    </ClCompile>
+    <ClCompile Include="client2dlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IBTRADE\AcctUpdatesDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IBTRADE\client2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IBTRADE\client2Dlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IBTRADE\DlgAccount.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IBTRADE\DlgAlgoParams.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IBTRADE\DlgComboLegs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IBTRADE\DlgConnect.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IBTRADE\DlgExtOrd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IBTRADE\DlgFAAllocationInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IBTRADE\DlgFinancialAdvisor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IBTRADE\DlgLogConfig.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IBTRADE\DlgMktDepth.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IBTRADE\DlgNewsBulletins.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IBTRADE\DlgOrder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IBTRADE\DlgScanner.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IBTRADE\DlgSmartComboRoutingParams.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IBTRADE\DlgUnderComp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IBTRADE\resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IBTRADE\RptFilterDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IBTRADE\StdAfx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="calendar\calendar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="weixin\Weixin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="weixin\PicDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="THostFtdc\ThostFtdcMdApi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="THostFtdc\ThostFtdcTraderApi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="THostFtdc\ThostFtdcUserApiDataType.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="THostFtdc\ThostFtdcUserApiStruct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sinaHttp\DealIndex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CtpMarketData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UserMsg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Index.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CtpTrader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IBTRADE\client2.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
