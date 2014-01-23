@@ -16,3 +16,4 @@
 #define WM_OnErrRtnOrderInsert_Transfer WM_USER+125
 #define WM_OnRspError_Transfer WM_USER+126
 #define WM_SYS_INI WM_USER+127 //分系统初始化完毕消息 
+//xxxxxxxxxxxxxxx
