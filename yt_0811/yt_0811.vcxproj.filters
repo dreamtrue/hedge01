@@ -136,9 +136,6 @@
     <ClCompile Include="IBTRADE\client2Dlg.cpp">
       <Filter>trade</Filter>
     </ClCompile>
-    <ClCompile Include="client2dlg.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="IBTRADE\AcctUpdatesDlg.h">

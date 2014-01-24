@@ -23,7 +23,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="calendar\calendar.cpp" />
-    <ClCompile Include="client2dlg.cpp" />
     <ClCompile Include="Common.cpp" />
     <ClCompile Include="CtpTrader.cpp" />
     <ClCompile Include="HedgeSys.cpp" />
@@ -125,9 +124,9 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>D:\yt_0811\yt_0811\weixin;D:\yt_0811\yt_0811\SocketClient;D:\yt_0811\yt_0811\IBTRADE;D:\yt_0811\yt_0811\calendar;D:\yt_0811\yt_0811\sinaHttp;D:\yt_0811\yt_0811\SocketClient\src;D:\yt_0811\yt_0811\TradeSpi;D:\yt_0811\yt_0811\THostFtdc;D:\yt_0811\yt_0811\MdSpi;D:\yt_0811\yt_0811\Shared;D:\yt_0811\yt_0811\yt_0811\IBTRADE;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\yt_0811\yt_0811\res;$(LibraryPath)</LibraryPath>
-    <ReferencePath>D:\yt_0811\yt_0811\res;$(ReferencePath)</ReferencePath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
     <SourcePath>$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -141,7 +140,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\trade\yt_0811\SocketClient\src;E:\trade\yt_0811;E:\trade\yt_0811\Shared;E:\trade\yt_0811\res;E:\trade\yt_0811\sinaHttp;E:\trade\yt_0811\weixin;E:\trade\yt_0811\THostFtdc;E:\trade\yt_0811\SocketClient;E:\trade\yt_0811\IBTRADE;E:\trade\yt_0811\calendar;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)weixin;$(ProjectDir)THostFtdc;$(ProjectDir)SocketClient\src;$(ProjectDir)sinaHttp;$(ProjectDir)Shared;$(ProjectDir)res;$(ProjectDir)IBTRADE;$(ProjectDir);$(ProjectDir)calendar;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
