@@ -1,7 +1,9 @@
 // client2.cpp : Defines the class behaviors for the application.
 //
-
 #include "stdafx.h"
+#define _CRTDBG_MAP_ALLOC//顺序改变后 函数可能无法正常工作
+#include <stdlib.h>
+#include <crtdbg.h>//可以将函数malloc（）和free（）映射到对应的调试板本的_malloc_dbg，_free_dbg, 该函数会跟踪内存分配和释放
 #include "client2.h"
 #include "client2Dlg.h"
 #include "..\UserMsg.h"
@@ -40,6 +42,19 @@ CClient2App theApp;
 
 BOOL CClient2App::InitInstance()
 {
+
+	//检查内存泄漏
+	AfxEnableMemoryTracking(true);
+	_CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
+	_CrtSetDbgFlag(_CRTDBG_LEAK_CHECK_DF | _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG));  
+	_CrtDumpMemoryLeaks();
+	_CrtSetBreakAlloc(136);
+	_CrtMemState s1, s2, s3;  
+    _CrtMemCheckpoint(&s1);
+	afxMemDF = allocMemDF | delayFreeMemDF | checkAlwaysMemDF;
+
+
+
 	if (!AfxSocketInit())
 	{
 		AfxMessageBox(IDP_SOCKETS_INIT_FAILED);

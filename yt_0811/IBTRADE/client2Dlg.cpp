@@ -2983,6 +2983,11 @@ void CClient2Dlg::ReqQryDepthMarketData(void)
 }
 void CClient2Dlg::OnRspQryDepthMarketData(CThostFtdcDepthMarketDataField *pDepthMarketData, CThostFtdcRspInfoField *pRspInfo, int nRequestID, bool bIsLast){
 	if (bIsLast && !IsErrorRspInfo(pRspInfo)){
+		if(pDepthMarketData == NULL){
+			TRACE(_T("获取CTP市场深度失败！设置前日结算价为0！"));
+			m_preSettlementPriceCtp = 0;
+			return;
+		}
 		m_preSettlementPriceCtp = pDepthMarketData->PreSettlementPrice;
 		m_ifAsk10 = m_preSettlementPriceCtp;
 	    m_ifBid10 = m_preSettlementPriceCtp;

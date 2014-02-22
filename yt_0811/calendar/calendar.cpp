@@ -10,11 +10,10 @@ WORD ifFinalDay(WORD t_year,WORD t_month){
 		if(t_weekDay ==  5){
 			totalFriday++;
 		}
-		if(totalFriday >= 3){
-			//大于3的最近一个交易日,因为如遇节假日是顺延的
+		if(totalFriday >= 3){//等于3正好;如果星期五不是交易日,则取大于3的最近一个交易日	
 			if(isTradeDay(t_year,t_month,i)){
 				return i;
-			};
+			}
 		}
 	}
 	return t_monthDays;//没有找到最后交易日,将最后交易日认为t_monthDays号,这样当月最后倒数第二天切换合约
@@ -37,11 +36,29 @@ bool isTradeDay(WORD t_year,WORD t_month,WORD t_day){
 	WORD t_weekday = 0;
 	t_weekday = WeekDay(t_year,t_month,t_day);
 	//交易日历	
-	if(t_year ==  2013){
-		if(t_weekday == 6 || t_weekday == 0){
+	if(t_weekday == 6 || t_weekday == 0){
+		return false;
+	}
+	if(t_year ==  2014){
+		if(t_month == 1 && t_day == 31){
 			return false;
 		}
-		else if(t_month == 9 && t_day >= 19 && t_day <= 21){
+		else if(t_month == 2 && t_day >= 1 && t_day <= 6){
+			return false;
+		}
+		else if(t_month == 4 && t_day >= 5 && t_day <= 7){
+			return false;
+		}
+		else if(t_month == 5 && t_day >= 1 && t_day <= 3){
+			return false;
+		}
+		else if(t_month == 5 && t_day == 31){
+			return false;
+		}
+		else if(t_month == 6 && t_day >= 1 && t_day <= 2){
+			return false;
+		}
+		else if(t_month == 9 && t_day >= 6 && t_day <= 8){
 			return false;
 		}
 		else if(t_month == 10 && t_day >= 1 && t_day <= 7)
@@ -55,7 +72,7 @@ bool isTradeDay(WORD t_year,WORD t_month,WORD t_day){
 	}
 	else{
 		//下一年的留待本年后重新更新交易日
-		return false;
+		return true;
 	}
 }
 WORD MonthDays(WORD year, WORD month)//根据输入的年号和月份，返回该月的天数    
